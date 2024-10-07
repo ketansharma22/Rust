@@ -47,4 +47,28 @@
 //     }
 //
 //
+
+
+
+//ownership concept
+// fn main(){
+//     let mut s1=String:: from("first");
+//     s1=ownership(s1);
+//     println!("first owner,{}",s1);
 // }
+// fn ownership(s:String)->String{
+//     println!(" second owner,{}",s);
+//     return s;
+// }
+
+
+//borrowing and reference
+
+fn main(){
+    let mut s1=String::from("hello");
+    let s2=&s1;
+    println!("{}", s2);
+    println!("{}",s1);
+    s1="";
+}
+
